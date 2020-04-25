@@ -6,7 +6,7 @@ package com.amdocs.ayush.mavenDemo;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main(asa)
     {
         System.out.println( "Hello World!" );
            
