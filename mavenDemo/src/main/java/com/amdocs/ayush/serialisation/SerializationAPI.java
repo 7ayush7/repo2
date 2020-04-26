@@ -73,6 +73,6 @@ public class SerializationAPI {
 		ObjectInputStream in = new ObjectInputStream(new FileInputStream("test.txt"));
 		Student s2 = (Student) in.readObject();
 		System.out.println(s2);
-		in.close();
+		in.close();  
 	}
 }
