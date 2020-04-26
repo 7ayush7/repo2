@@ -2,13 +2,14 @@ package com.amdocs.ayush.reflection;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 public class ReflectionAPI {
 
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException{
 		Class cl = Child.class;
 		Child c = (Child) cl.newInstance();
-		Method[] methods = c.getClass().getMethods();
+		Method[] methods = cl.getMethods();
 		for(Method m:methods){
 			if(!m.getDeclaringClass().getName().contains("Object")){
 			System.out.println(m.getName());
@@ -25,5 +26,6 @@ public class ReflectionAPI {
 		Method m3 = cl.getDeclaredMethod("getData", null);
 		m3.setAccessible(true);
 		System.out.println(m3.invoke(c, null));
+		
 	}
 }
