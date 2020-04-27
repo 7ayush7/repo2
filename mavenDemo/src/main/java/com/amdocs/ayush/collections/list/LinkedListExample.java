@@ -39,5 +39,20 @@ public class LinkedListExample {
 		while(iter.hasNext()){
 			System.out.println(iter.next());
 		}
+		
+		LinkedList<Integer> list4 = new LinkedList<Integer>();
+		list4.add(0);
+		list4.add(1);
+		list4.add(2);
+		
+		Iterator<Integer> descIter = list4.descendingIterator();
+		while(descIter.hasNext()){
+			System.out.print(descIter.next());
+		}
+		System.out.println();
+		List<Integer> list5=(List<Integer>) list4.clone();
+		for(Integer i2:list5){
+			System.out.print(i2);
+		}
 	}
 }
