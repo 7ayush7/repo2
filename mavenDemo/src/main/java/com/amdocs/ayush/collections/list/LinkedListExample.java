@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class LinkedListExample {
 
@@ -50,9 +51,15 @@ public class LinkedListExample {
 			System.out.print(descIter.next());
 		}
 		System.out.println();
-		List<Integer> list5=(List<Integer>) list4.clone();
+		LinkedList<Integer> list5=(LinkedList<Integer>) list4.clone();
 		for(Integer i2:list5){
 			System.out.print(i2);
+		}
+		System.out.println();
+		list5.sort(Collections.reverseOrder());
+		ListIterator<Integer> revIterate = list5.listIterator();
+		while(revIterate.hasNext()){
+			System.out.print(revIterate.next());
 		}
 	}
 }
