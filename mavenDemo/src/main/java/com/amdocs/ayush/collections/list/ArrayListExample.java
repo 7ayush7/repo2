@@ -68,5 +68,9 @@ public class ArrayListExample {
 		System.out.println(list2);//I encountered a weird behavior that if you delete 2nd last element from list
 		//via for each then it does not throw any ConcurrentModificationException, found a great stackoverflow thread on this
 		//Please refer : https://stackoverflow.com/questions/16079931/java-lists-remove-method-works-only-for-second-last-object-inside-for-each-loo
-		}
+		List<Integer> list4 = new ArrayList<Integer>();
+		System.out.println(list4.isEmpty());//list4 holds memory reference of newly created list, hence its not null
+		List<Integer> list5=null;
+		System.out.println(list5.isEmpty());//Gives null pointer exception as there list5 reference holds null as reference
+	}
 }
