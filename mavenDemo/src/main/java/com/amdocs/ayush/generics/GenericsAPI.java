@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-class GenericsExample <T extends Number>{//This is a generics of type T that must extend Number class, So in that way you can have Generics example of type Float, Double and Integer
+class GenericsExample <T extends Number>{
+	//This is a generics of type T (which btw can be generics of type element {GenericExample<E extends Number>} also, 
+	//but for readability and to keep it logically correct. We say that as Integer is a type so this must be Generic of Type T rather than calling Generic of Element E )
+	//that must extend Number class, So in that way you can have Generics example of type Float, Double and Integer
 	T object;
 
 	public T getObject() {
