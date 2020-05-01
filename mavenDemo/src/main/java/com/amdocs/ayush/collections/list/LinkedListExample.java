@@ -3,10 +3,12 @@ package com.amdocs.ayush.collections.list;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Set;
 
 public class LinkedListExample {
 
@@ -61,5 +63,14 @@ public class LinkedListExample {
 		while(revIterate.hasNext()){
 			System.out.print(revIterate.next());
 		}
+		System.out.println();
+		List<Integer> t = new ArrayList<Integer>();
+		Integer[] i2 = {1,2,3};
+		Set<Integer> set2 = new HashSet<>(t);
+		Collections.addAll(set2, i2);
+		//its one way or you can do : 
+		//Set<Integer> set = new HashSet<Integer>(Arrays.asList(i2));
+		//that way it will create the set with list created from an array
+		System.out.println(set2);
 	}
 }
