@@ -1,6 +1,9 @@
 package com.amdocs.ayush.collections.hashcodeeqalscontract;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class Runner {
@@ -21,5 +24,13 @@ public class Runner {
 		
 		//Good Article : https://howtodoinjava.com/java/basics/java-hashcode-equals-methods/
 		System.out.println(set);
+		
+		Map<Employee,Integer> map = new HashMap<>();
+		map.put(e1, 1);
+		map.put(e2, 2);
+		
+		for(Entry<Employee,Integer> e:map.entrySet()){
+			System.out.println(e.getKey().id+" "+e.getValue());
+		}
 	}
 }
