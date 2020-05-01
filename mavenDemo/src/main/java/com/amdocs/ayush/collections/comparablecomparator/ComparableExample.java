@@ -1,10 +1,8 @@
 package com.amdocs.ayush.collections.comparablecomparator;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 class Employee implements Comparable<Employee>{
@@ -85,5 +83,15 @@ public class ComparableExample {
 	TreeSet<Employee> set = new TreeSet<>(list);
 	System.out.println(list);
 	System.out.println(set);
+	
+	TreeMap<Employee,Integer> map = new TreeMap<>();
+	map.put(e4, 1);
+	map.put(e5, 2);
+	map.put(e3, 3);
+	map.put(e2, 4);
+	map.put(e1, 5);
+
+	
+	System.out.println(map);
 	}
 }
