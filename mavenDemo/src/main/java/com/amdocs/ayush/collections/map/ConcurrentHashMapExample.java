@@ -1,5 +1,6 @@
 package com.amdocs.ayush.collections.map;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -10,6 +11,7 @@ class Test{
 	synchronized void update(int from, int to) throws InterruptedException{
 		for(int i=from;i<to;i++){
 			c.put(i, i);
+			System.out.println(Thread.currentThread().getName());
 			}
 	}
 }
@@ -20,7 +22,7 @@ public class ConcurrentHashMapExample {
 		Test t = new Test();
 		Thread t1 = new Thread(()->{
 			try {
-				t.update(0,50000);
+				t.update(0,50);
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -29,7 +31,7 @@ public class ConcurrentHashMapExample {
 		t1.start();
 		Thread t2 = new Thread(()->{
 			try {
-				t.update(0,50000);
+				t.update(0,50);
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
