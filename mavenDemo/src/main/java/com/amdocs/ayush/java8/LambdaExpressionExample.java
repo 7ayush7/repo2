@@ -18,7 +18,7 @@ public class LambdaExpressionExample {
 			});//Lambda Expression for Runnable Interface
 		e.shutdown();
 		System.out.println();
-		Addition a = (a1,b1)->(a1+b1);//one way
+		Addition a = (a1,b1)->a1+b1;//one way
 		Addition b = (int a2, int b2)->{return a2+b2;};//other way
 		System.out.println(a.add(1, 2));
 	}
