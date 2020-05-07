@@ -25,7 +25,14 @@ public class VolatileExample {
 	//with the main memory, so that there must be consistency
 	
 	int counter = 0;
-	 
+	
+	int readData(){
+		return counter;
+	}
+	int writeData(){
+		return counter = counter+1;
+	}
+	
 	public static void main(String[] args) throws InterruptedException{
 		
 		VolatileExample v = new VolatileExample();
@@ -33,16 +40,7 @@ public class VolatileExample {
 			
 			@Override
 			public void run() {
-				while (v.flag) {
-					v.counter++;
-					System.out.println(v.counter+" "+v.flag);		
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
+				System.out.println(Thread.currentThread().getName()+" "+v.writeData());
 			}
 		});
 		
@@ -50,15 +48,7 @@ public class VolatileExample {
 			
 			@Override
 			public void run() {
-				DataInputStream din = new DataInputStream(System.in);
-				try {
-					String input = din.readLine();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				v.flag=false;
-			}
+			System.out.println(Thread.currentThread().getName()+" "+v.readData());}
 		});
 		
 		t1.start();
