@@ -1,7 +1,10 @@
 package com.amdocs.ayush.collections.map;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 class Test{
@@ -38,9 +41,14 @@ public class ConcurrentHashMapExample {
 			}
 		});
 		t2.start();
-		for(Integer e:t.c.keySet()){
-			System.out.println("Key :"+e);
-			//t.c.put(999, 999);
+//		for(Integer e:t.c.keySet()){
+//			System.out.println("Key :"+e);
+//			//t.c.put(999, 999);
+//		}
+		Iterator<Entry<Integer, Integer>> i = t.c.entrySet().iterator();
+		while(i.hasNext()){
+			System.out.println("Key :"+i.next().getKey());
+			t.c.put(999, 999);
 		}
 		System.out.println(t.c);
 		long end = System.currentTimeMillis();
