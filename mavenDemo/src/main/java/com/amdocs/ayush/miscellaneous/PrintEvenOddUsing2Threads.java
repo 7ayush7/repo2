@@ -5,7 +5,7 @@ class Test{
 
 	public void printOdd(int i) throws InterruptedException{
 		synchronized (this) {
-			if(!printingOdd){
+			while(!printingOdd){
 				wait();
 			}
 			System.out.println(i);
@@ -15,7 +15,7 @@ class Test{
 	}
 	public void printEven(int i) throws InterruptedException{
 		synchronized (this) {
-			if(printingOdd){
+			while(printingOdd){
 				wait();
 			}
 			System.out.println(i);

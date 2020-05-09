@@ -7,7 +7,7 @@ class Test2{
 	}
 	
 	public synchronized void debitAmount(int i) throws InterruptedException{
-		if(i>=balance){
+		while(i>=balance){
 			System.out.println("Debit Amount - "+i+" is >= balance - "+balance+" hence waiting for credit");
 			wait();
 		}

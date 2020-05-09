@@ -15,7 +15,7 @@ class Test1{
 	}
 	
 	synchronized void producerMethod(Integer i) throws InterruptedException{
-		if(list.size()>=max){
+		while(list.size()>=max){
 		System.out.println("Size >= max, hence waiting");
 		wait();
 		}
@@ -25,7 +25,7 @@ class Test1{
 	}
 	
 	synchronized void consumerMethod(Integer i) throws InterruptedException{
-		if(list.size()<= min){
+		while(list.size()<= min){
 		System.out.println("Size <= min, hence waiting");
 		wait();
 		}
