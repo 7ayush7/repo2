@@ -1,6 +1,7 @@
 package com.amdocs.ayush.java8;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -36,5 +37,16 @@ public class StreamsExample {
 		System.out.println(list3.stream().anyMatch(p->p.name.contains("t")));
 		List<Student> list5 = list3.stream().distinct().collect(Collectors.toList());
 		System.out.println(list5);
+		
+		HashMap<Student,Integer> map = new HashMap<>();
+		map.put(new Student(1, "A"), 1);
+		map.put(new Student(1, "A"), 2);
+		
+		map.forEach((a,b)->System.out.println(a.id+" "+b));
+
+		System.out.println();
+		System.out.println();
+		List<Integer> list6 = Arrays.asList(1,1,1,2,3,4,5,6,6,7,8);
+		list6.stream().distinct().filter(s->s>3).map(a->a).collect(Collectors.toList()).forEach(a->System.out.println(a));
 	}
 }
