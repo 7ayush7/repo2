@@ -97,6 +97,9 @@ public class SingteltonDesignPatternExample {
 		ExecutorService e2 = Executors.newFixedThreadPool(2);
 		e2.execute(SingletonSynchBlock::getInsatance);
 		e2.execute(SingletonSynchBlock::getInsatance);
+		
+		e1.shutdown();
+		e2.shutdown();
 	}
 
 }
