@@ -5,6 +5,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
+class Test1{
+	String name;
+	Test1(String name){this.name=name;}
+}
 public class TreeMapExample {
 
 	public static void main(String[] args){
@@ -28,6 +32,13 @@ public class TreeMapExample {
 		System.out.println(set1);
 		Map<Integer,Integer> map5 = map1.descendingMap();
 		System.out.println(map5);
+		
+		
+		TreeMap<Test1, Integer> tMap = new TreeMap<>();
+		tMap.put(new Test1("Ayush"), 1);//Throws Class Cast exception as there is no implementation provided for 
+		//Sorting be it Comparator or Comparable
+		//Same goes for TreeSet as well
+		System.out.println(tMap);
 		
 	}
 	
