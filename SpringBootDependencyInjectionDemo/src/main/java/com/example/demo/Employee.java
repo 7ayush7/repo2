@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.hibernate.validator.constraints.CodePointLength;
 import org.springframework.stereotype.Component;
 
 @Component
