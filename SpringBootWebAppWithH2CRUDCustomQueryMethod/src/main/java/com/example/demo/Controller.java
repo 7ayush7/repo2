@@ -37,7 +37,7 @@ public class Controller {
 //		list.add(c.isPresent()?c.get():new Customer());
 //		return list;
 		
-		//Requirement : Create a method that returns Customer object findByName
+		//Requirement : Create a method that returns Customer object findByName but Sorted by Country name ascending
 		System.out.println(factory.findByNameSortedByCountry(name));
 		return factory.findByNameSortedByCountry(name);
 	}
