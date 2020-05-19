@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.ribbon.proxy.annotation.Hystrix;
+
+import net.minidev.json.JSONObject;
+
 @RestController
 @RequestMapping("/hospital/admin")
 public class AdminController {
@@ -30,9 +35,17 @@ public class AdminController {
 	
 	
 	@GetMapping("/testsavailable")
-	public PathalogyTestList getAllPathalogyTests() {
+	@HystrixCommand(fallbackMethod = "fallback")
+	public Object getAllPathalogyTests() {
 		PathalogyTestList list = restTemplate.getForObject("http://PATHALOGY-SERVICE/hospital/pathalogy/tests", PathalogyTestList.class);
 		return list;
+	}
+	
+	public Object fallback() {
+		JSONObject obj = new JSONObject();
+		obj.appendField("error", "failed to call the microservice");
+		obj.appendField("reason", "unable to access the service");
+		return obj;
 	}
 	
 	@GetMapping("/listofpatients")
