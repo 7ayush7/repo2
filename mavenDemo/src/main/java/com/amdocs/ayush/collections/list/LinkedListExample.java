@@ -27,7 +27,7 @@ public class LinkedListExample {
 		LinkedList<Integer> list3 = (LinkedList<Integer>) list.clone();
 		System.out.println(list3);
 		System.out.println(list3.contains(1));
-		System.out.println(list3.equals(list));
+		System.out.println("Equals "+list3.equals(list));
 		System.out.println(list.containsAll(list3));
 		list.push(1);
 		System.out.println(list);

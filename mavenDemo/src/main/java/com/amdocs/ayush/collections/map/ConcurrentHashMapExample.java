@@ -14,7 +14,7 @@ class Test{
 	synchronized void update(int from, int to) throws InterruptedException{
 		for(int i=from;i<to;i++){
 			c.put(i, i);
-			System.out.println(Thread.currentThread().getName());
+			System.out.println(Thread.currentThread().getName()+" "+i);
 			}
 	}
 }

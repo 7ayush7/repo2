@@ -1,0 +1,75 @@
+Theory Questions:
+
+Java Theory questions :
+
+Diff bw Synchronized block and Reenterent lock
+What is immutability?
+immutability vs final
+What is the hashcode and equals contract in Java
+What if thread in a thread pool throws an Exception
+Difference between abstract classes and interfaces.
+Explain OOPs concepts by taking example of any collection
+How does Arraylist works internally?
+What is the difference between LinkedList and ArrayList? When to use LinkedList/ArrayList and Why?
+What is Serialization and why we use?
+In How many ways Class can be instantiated?
+What is immutable and how we can achieve?
+What is singleton and how we can achieve?
+What is AtomicInteger and when to use?
+What is CompareAndSwap/CompareAndGet?
+How Garbage Collector works?
+Does GC works in permgen as well
+What is volatile keyword
+Can private constructor be invoked from other class if yes ? how
+Can private methods can be invoked from other class if yes ? how
+Can i break your singleton class by invoking your private constructor ? if yes how can you stop me from doing that
+Which are syntactically correct
+	a.	List l = new ArrayList<String>();
+	b.	List<Object> l = new ArrayList<String>();
+	c.	List<String> l = new ArrayList<Object>();
+	d.	List list = new ArrayList<Object>();
+		list.add(“abc”);
+	e.	List<String> l = new ArrayList();
+How does BlockingQueue work internally?
+What is callable
+What are different types of threadpools
+How-does-concurrent hash map-work-internally 
+What do you understand of Latch & Cyclic barrier 
+What-are-fail-safe-fail-fast-iterators-in-java 
+Can i make changes in a list while iterating it in a enhanced for loop
+What is difference between internal implementation of enahnced for loop and iterators-in-java
+There is add method in ListIterator but not in iterator. Why?
+What-is-the-actual-use-of-interface-in-java 
+when-to-use-volatile-and-synchronized 
+How does hash map work internally
+What Are OOPs Concepts in Java ?
+Have you heard about spurrious wakeup. is yes, what it is actually and how can you handle that
+What is SOLID design principles
+What design patterns have you worked upon
+References (Soft and weak)
+What is abstraction in java? Realtime example.
+New features introduced in Java 8
+Is it necessary to have Comparable and COmparator implementations while working on Custome Objects in TreeSet and TreeMap.
+In a hashmap what if,only equals method is overridden.
+In a hashmap what if,only hashcode method is overridden.
+What is the use of ReentrantLock? Advantage of ReentrantLock over synchronized block and method.
+difference between submit and execute method
+How can you convert list of Integer to int array
+Deep copy vs Shallow copy
+Why final is used in an immutable class
+Suppose an immutable class has a List<?> of 1 million data. Now if you do deep copy every time too much memory consumption - What can be done to minimize the effect.
+Which exception is propogated in the method invocation stack
+Can we use try without finally or catch
+Are you aware of try with resources? Where do we use them
+What are Marker Interfaces
+Internal working of hashset
+How JVM functions if there is no method in marker interfaces
+Checked/Unchecked/Custom Exceptions
+How can you create immutable list
+Difference between Collections.synchronizedMap() vs ConcurrentHashMap
+What is difference between Metaspace and permgen space
+Is metaspace part of Heap memory
+Questions based on Consumer Supplier Predicate Function Interfaces
+What do you understand by Functional Interfaces, Method Refernces, Optional Utility class and all other aspects which you have covered under java 8
+
+

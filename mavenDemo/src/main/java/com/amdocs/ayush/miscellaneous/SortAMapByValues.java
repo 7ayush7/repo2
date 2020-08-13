@@ -1,5 +1,6 @@
 package com.amdocs.ayush.miscellaneous;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -22,7 +23,7 @@ class SortAMapByValuesTest{
 public class SortAMapByValues {
 
 	public static HashMap<Integer, Integer> sortMapByValues(HashMap<Integer, Integer> inputMap){
-		List<Entry<Integer,Integer>> list = new LinkedList<>(inputMap.entrySet());
+		List<Entry<Integer,Integer>> list = new ArrayList<>(inputMap.entrySet());
 		Collections.sort(list, (o1,o2)->o1.getValue().compareTo(o2.getValue()));
 		LinkedHashMap<Integer, Integer> retMap = new LinkedHashMap<>();
 		for(Entry<Integer, Integer> e:list){

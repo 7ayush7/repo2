@@ -7,9 +7,11 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
+import test.Test;
+
 class Student implements Serializable{
 
-	private static final long serialVersionUID = 5991770555536253902L;
+	//private static final long serialVersionUID = 5991770555536253902L;
 	/**
 	 * 
 	 */
@@ -25,14 +27,16 @@ class Student implements Serializable{
 	transient Integer id;// adding transient stops this field from being serialized
 	String name;
 	static Integer staticData;
+	transient Test test;
 	
 	public Student(){
 		
 	}
-	public Student(Integer id, String name,Integer staticData) {
+	public Student(Integer id, String name,Integer staticData,Test test) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.test=test;
 		this.staticData = staticData;
 	}
 	public Integer getId() {
@@ -48,7 +52,7 @@ class Student implements Serializable{
 		this.name = name;
 	}
 	public String toString(){
-		return this.id+" "+this.name+" "+this.staticData;
+		return this.id+" "+this.name+" "+this.staticData+" "+this.test;
 	}
 	
 }
@@ -63,7 +67,7 @@ public class SerializationAPI {
 		
 		//Serialization
 
-		Student s = new Student(1, "Ayush",1);
+		Student s = new Student(1, "Ayush",1,new Test(10));
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("test.txt"));
 		out.writeObject(s);
 		out.close();

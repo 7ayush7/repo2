@@ -1,0 +1,116 @@
+ Cyclic string
+ Pascals triangle
+ Floyds triangle
+ Temperature closest to zero
+ AnagramStringExample 
+ CheckArmstrongNumber 
+ CheckIfListIsPallindrome 
+ CheckIfStringIsNumber 
+ CheckPallindromeNumber
+ CheckPallindromeString
+ CheckPrimeNumber
+ CreateANormalArrayFromArrayWithinArray
+ CreditDebitExample
+ CustomLinkedList
+ DeadlockExample
+ DeleteAlternatingCharacters
+ EndOfFile #
+ FindAllSubstringsInAString
+ FindCommonSubstringIn2Strings 
+ FindDuplicateCharactersInAString
+ FindLengthOfStringWithoutLengthMethod
+ FindMissingNumberinAnArray 
+ FindNumberOccurringOddNumberOfTimesInAnArray 
+ FindPairWhoseSumIsClosestToXInAnArray 
+ FindTripletsFromAnArray 
+ FirstNonRepeatedCharacter
+ RemoveDuplicatesFromList 
+ FizzBuzzExample 
+ ImplementStack 
+ IntegerToRomanNumerals #
+ LongestPallindromeSubstring 
+ ReverseInteger 
+ ReverseStringWithoutInbuiltMethods 
+ TwoSum 
+ TwoSum2 
+ MaxAndMinOfAnArray
+ SortAnArrayWithoutUsingItsMethods 
+ AnagramStrings
+ CheckIfStringContainsOnlyDigits 
+ CountDigitsinAnInteger 
+ CountNumberOfEvenAndOddDigitsInAnInteger 
+ DuplicateCharactersFromString 
+ FindFirstDigitLastDigitAndSumOfGivenNumber 
+ FindFirstDuplicateOccurenceInAnArray 
+ FindSumOfDigitsOfANumber 
+ LargestOfThreeNumbers 
+ PrintElementsAtEvenPosition
+ PrintFirstNonRepeatedCharacterFromString 
+ PrintNEvenNumbers 
+ RemoveAllWhiteSpacesFromAString 
+ ReturnMaximumOccuringCharacterInString 
+ ReverseAString 
+ ReverseAStringUsingRecurrsion #
+ ReverseElementsOfArray 
+ ReverseWordsInAString 
+ Sum2Strings
+ ToCheckGivenNumberIsPerfectSquareOrNot 
+ WellFormed_BalancedString 
+ NestedTryDemo 
+ PrintingDifferentStarPatterns 
+ PrintEvenOddUsing2Threads 
+ PrintFibonnaciSeries 
+ PrintPrimeNumber1To100 
+ PrintSequenceUsing3Threads #
+ PrintTable 
+ ProducerConsumerProblem 
+ ProducerConsumerProblemUsingBlockingQueue 
+ PropertiesFileReadAndWriteExample #
+ RemoveDuplicatesFromList 
+ ReverseLinkedList 
+ ReverseLinkedListInPairs 
+ ReverseStringExample 
+ SecondLargestElementInAnArray 
+ SeparateOddAndEvenNumberInJava 
+ SeparateZeroAndOneInAnArray 
+ SeparateZeroOneTwoInAnArray 
+ SmallestLargestElementInArray 
+ SortAMapByValues 
+ SortingAnArrayWithoutArraysSortMethod 
+ SortListOfPlayersOnBasisOfScoreAndIfSameScoreThenByName 
+ SortListUsingComparable 
+ SortListUsingComparator 
+ StringHashCodeTest 
+ SuperConstructorExample 
+ Swap2NumbersWithAndWithoutUsingTempVariable 
+ Swap2StringsWithAndWithoutTempVariable 
+ ToFindMiddleElementInLinkedList 
+ ToFindNthElementFromEndOfLinkedList 
+ ThreadCallable 
+ ImplementBubbleSort #
+ ImplementationOfBinarySearch #
+ CustomArrayList 
+ HashCodeEqualsContract 
+ Stream API --
+ Consumer Predicate Supplier Function
+ ImplementQueue
+ TripletsOfAnArraySuchThatSumOf2ElementsEqualsThird
+ FindGCD
+ CustomConcurrentHashMap
+ CustomHashMap
+ CustomStack
+ CustomQueue
+ DifferentSearchingAlgorithm
+ DifferentSortingAlgorithm
+ 2ndNonRepeatingCharacterInAString
+ SerializableClassExample
+ ImmutableExample
+ SingletonExample
+ AllGangOf4DesignPatternExamples
+ 
+ 
+ Imp Links :
+ 
+ https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+ https://www.java67.com/2018/05/top-75-programming-interview-questions-answers.html
+ https://www.interviewbit.com/coding-problems/

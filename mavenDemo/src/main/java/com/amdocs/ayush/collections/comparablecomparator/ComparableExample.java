@@ -1,6 +1,7 @@
 package com.amdocs.ayush.collections.comparablecomparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -79,7 +80,7 @@ public class ComparableExample {
 	list.add(e4);
 	list.add(e5);
 
-	//Collections.sort(list);
+	Collections.sort(list);
 	TreeSet<Employee> set = new TreeSet<>(list);
 	System.out.println(list);
 	System.out.println(set);
