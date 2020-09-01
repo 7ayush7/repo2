@@ -42,10 +42,10 @@ public class OptionalUtilJava8Example {
 	}
 	public static void main(String[] args){
 	List<Emp> empList = createWithDefaultValues();
-	Optional<Emp> e = findEmployeeByName(empList,"Ayush");
+	Optional<Emp> e = findEmployeeByName(empList,"emp1");
 	//e.name Throws null pointer exception as we didnt handled the return null from called method
 	if(e.isPresent()){
-		System.out.println(e);
+		System.out.println(e.get());
 	}
 	else{
 		System.out.println("No value present");

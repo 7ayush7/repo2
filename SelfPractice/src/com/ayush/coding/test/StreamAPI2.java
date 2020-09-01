@@ -11,7 +11,7 @@ public class StreamAPI2 {
 	}
 	public static void main(String[] args){
 		StreamAPI2 obj = new StreamAPI2();
-		String s[] = {"0","1","2","3","4","5","6","7"};
+		String s[] = {"0","1","2","3","4","5","6","7","8","9"};
 		Stream<String> parallel = Arrays.stream(s).parallel();
 		Stream<String> sequential = Arrays.stream(s).sequential();
 		
