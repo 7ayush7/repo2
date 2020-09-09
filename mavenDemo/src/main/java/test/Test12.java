@@ -14,7 +14,7 @@ import java.util.Map;
 public class Test12 {
 
 	public static void main(String[] args){
-		String s = "123";
+		String s = "123456";
 		char[] c = s.toCharArray();
 		Map<List<String>,String> map = new HashMap<>();
 		for(int i=0;i<c.length;i++){

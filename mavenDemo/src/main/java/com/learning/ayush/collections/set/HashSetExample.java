@@ -77,6 +77,8 @@ public class HashSetExample {
 		set4.add(new Student(1, "Ayush"));
 		set4.add(new Student(2, "Animesh"));
 
+		HashSet<Student> set5 = (HashSet<Student>) set4.clone();
+		System.out.println(set5);
 		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("test2.txt"));
 		out.writeObject(set4);
 

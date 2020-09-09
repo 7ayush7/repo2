@@ -15,7 +15,7 @@ class LocalEmp implements Comparable<LocalEmp>{
 	}
 	@Override
 	public int compareTo(LocalEmp o) {
-		return this.id>o.id?1:-1;
+		return this.id>o.id?1:this.id<o.id?-1:0;
 	}
 	public String toString(){
 		return this.id+" "+this.name;
@@ -53,9 +53,9 @@ public class SortListUsingComparable {
 
 	public static void main(String[] args){
 		Map<LocalEmp, Integer> map = new TreeMap<LocalEmp, Integer>();
-		map.put(new LocalEmp(3, "A"), 3);
-		map.put(new LocalEmp(2, "A"), 3);
-		map.put(new LocalEmp(2, "A"), 3);
+		map.put(new LocalEmp(3, "A"), 32);
+		map.put(new LocalEmp(2, "A"), 30);
+		map.put(new LocalEmp(2, "A"), 31);
 		System.out.println(map);
 		/*VImp : Unlike Hashmap and LinkedHashMap .. TreeMap does not uses hashCode() and equals() method for key comparison rather TreeMap
 		internally uses comparable methods for comparison part... though we can override equals and hashcode
@@ -64,9 +64,9 @@ public class SortListUsingComparable {
 		*/
 		
 		Map<LocalEmp, Integer> map2 = new HashMap<LocalEmp, Integer>();
-		map2.put(new LocalEmp(3, "A"), 3);
-		map2.put(new LocalEmp(2, "A"), 3);
-		map2.put(new LocalEmp(2, "A"), 3);
+		map2.put(new LocalEmp(3, "A"), 32);
+		map2.put(new LocalEmp(2, "A"), 31);
+		map2.put(new LocalEmp(2, "A"), 30);
 		System.out.println(map2);
 	}
 }

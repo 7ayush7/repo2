@@ -54,7 +54,7 @@ public class TreeSetExample {
 			ret.append(arr[i] + ",");
 		}
 		int index = ret.lastIndexOf(",");
-		ret.replace(index, index + 1, "]");
+		ret.replace(index, index + 2, "]");
 		System.out.print(ret.toString());
 
 		TreeSet<Integer> set5 = new TreeSet<Integer>(Collections.reverseOrder());

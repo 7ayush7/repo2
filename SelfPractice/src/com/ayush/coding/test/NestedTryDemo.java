@@ -21,6 +21,9 @@ public class NestedTryDemo {
 			try{
 				try{
 					throw new IOException("throwing from child");
+				}catch(IOException e2){
+					System.out.println(e2.getMessage());
+					System.out.println("Handled Inside");
 				}
 				finally{
 					
@@ -30,7 +33,7 @@ public class NestedTryDemo {
 				
 			}
 		}
-		catch(IOException e2){
+		catch(Exception e2){
 			System.out.println(e2.getMessage());
 			System.out.println("Handled Outside");
 		}

@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 public class Program5 {
 
 	public static void main(String[] args) {
-		Stream.of("1", "A", "z", "Z", "B", "a").sorted().filter(a -> Pattern.matches("\\D", a)).sorted()
+		Stream.of("1", "A", "z", "Z", "B", "a").sorted().filter(a -> Pattern.matches("[A-Za-z]", a)).sorted()
 				.forEach(a -> System.out.println(a));
 	}
 }

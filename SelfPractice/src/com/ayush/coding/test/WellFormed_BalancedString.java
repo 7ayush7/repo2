@@ -16,7 +16,7 @@ public class WellFormed_BalancedString {
 				stack.pop();
 			}
 		}
-		boolean flag = stack.size()==0?true:false;
+		boolean flag = stack.size()==0;
 		System.out.println("Is Well Formed "+flag);
 	}
 }
