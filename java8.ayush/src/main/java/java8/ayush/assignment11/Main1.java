@@ -39,7 +39,6 @@ public class Main1 {
 			FileChannel fc = fin.getChannel();
 			ByteBuffer bf = ByteBuffer.allocate(bufferSize);
 			fc.read(bf);
-			System.out.println(bf.toString());
 			bf.flip();
 			fcout.write(bf);
 			fc.close();
