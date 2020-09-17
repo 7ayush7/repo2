@@ -34,7 +34,7 @@ public class Main {
 		long salary=0;
 		for(Employee e:list) {
 			if(map.containsKey(e.getDepId())) {
-				salary=salary+e.getSalary();
+				salary=map.get(e.getDepId())+e.getSalary();
 			}
 			else {
 				salary=e.getSalary();

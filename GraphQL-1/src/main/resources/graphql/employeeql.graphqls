@@ -1,0 +1,16 @@
+type Employee {
+id: Int!,
+name: String!
+}
+
+type Query {
+getEmployeeDetails(id: Int): Employee
+getListOfEmployees: [Employee]
+getCountOfEmployees: Int
+}
+
+type Mutation {
+createEmployee(id: Int!,name: String!): Employee
+updateEmployee(id: Int!,name: String!): Employee
+deleteEmployee(id: Int!): Boolean
+}
