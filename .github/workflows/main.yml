@@ -1,0 +1,17 @@
+name: Manual Trigger to Call Google
+
+on:
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  call-google:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Make Request to Google
+        run: |
+          response_code=$(curl -o /dev/null -s -w "%{http_code}\n" https://www.google.com)
+          echo "Response Code: $response_code"
