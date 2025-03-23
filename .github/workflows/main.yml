@@ -8,8 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Make Request to Google
         run: |
           response_code=$(curl -o /dev/null -s -w "%{http_code}\n" https://www.google.com)
           echo "Response Code: $response_code"
+
+          if [ "$response_code" -eq 200 ]; then
+            echo "The call to Google works successfully"
+          else
+            echo "Something bad happened"
+            exit 1  # Fails the job if the response is not 200
+          fi
